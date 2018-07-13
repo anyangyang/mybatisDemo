@@ -16,4 +16,8 @@
         select * from flora_user where id = #{id}
     </select>
 
+    <select id="queryByUserId" resultType="com.mybatisDemo.modal.User">
+        select * from flora_user where id = #{id}
+    </select>
+
 </mapper>

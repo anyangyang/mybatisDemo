@@ -20,7 +20,7 @@ public class UserService {
         SqlSession session = sqlSessionFactory.openSession();
         try {
             UserMapper userMapper = session.getMapper(UserMapper.class);
-            User user = userMapper.queryById(1L);
+            User user = userMapper.queryByUserId(1L);
 
             if(user != null) {
                 System.out.println(user.getNickName());
